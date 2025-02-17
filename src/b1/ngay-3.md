@@ -1,4 +1,4 @@
-# Ngày 3
+# Ngày 3: Lập trình đơn giản
 
 Dưới đây là các bài tập lập trình đơn giản bằng Python:
 
@@ -15,7 +15,8 @@ print("Sau khi hoán đổi: a =", a, ", b =", b)
 
 Bài toán hoán đổi hai biến thường được sử dụng trong lập trình để thay đổi giá trị của hai biến mà không làm mất dữ liệu. Dưới đây là một số tình huống thực tế mà hoán đổi hai biến có thể hữu ích:  
 
-### 1. **Sắp xếp danh sách (Sorting Algorithms)**  
+---
+**Sắp xếp danh sách (Sorting Algorithms)**  
 Khi triển khai các thuật toán sắp xếp như **Bubble Sort, Selection Sort, Quick Sort**, ta thường cần hoán đổi vị trí của các phần tử để đưa danh sách về thứ tự mong muốn.  
 Ví dụ:  
 ```python
@@ -23,15 +24,18 @@ arr = [3, 1, 2]
 arr[0], arr[1] = arr[1], arr[0]  # Hoán đổi 3 và 1
 print(arr)  # Output: [1, 3, 2]
 ```
+---
 
 ---
 
-### 2. **Hoán đổi giá trị trong trò chơi (Game Development)**  
+**Hoán đổi giá trị trong trò chơi (Game Development)**  
 Khi lập trình game, ta có thể cần hoán đổi vị trí của hai đối tượng, ví dụ như hai quân cờ trong một bàn cờ.  
 
 ---
 
-### 3. **Đổi chỗ hai biến trong thuật toán đệ quy**  
+---
+
+**Đổi chỗ hai biến trong thuật toán đệ quy**  
 Một số bài toán đệ quy yêu cầu hoán đổi hai giá trị để xử lý thuận tiện hơn, như trong **đảo ngược mảng**.  
 Ví dụ:  
 ```python
@@ -45,10 +49,11 @@ arr = [1, 2, 3, 4, 5]
 reverse_list(arr, 0, len(arr) - 1)
 print(arr)  # Output: [5, 4, 3, 2, 1]
 ```
+---
 
 ---
 
-### 4. **Hoán đổi giá trị trong thuật toán tìm kiếm tối ưu**  
+**Hoán đổi giá trị trong thuật toán tìm kiếm tối ưu**  
 Khi thực hiện **tối ưu hóa bộ nhớ hoặc thuật toán tìm kiếm**, việc hoán đổi hai biến có thể giúp giảm chi phí tính toán.
 
 Ví dụ: **Hoán đổi giá trị nhỏ nhất lên đầu danh sách**  
@@ -61,7 +66,9 @@ print(arr)  # Output: [1, 2, 9, 4]
 
 ---
 
-### 5. **Đảo ngược giá trị hai biến trong xử lý dữ liệu**  
+---
+
+**Đảo ngược giá trị hai biến trong xử lý dữ liệu**  
 Ví dụ: **Đổi tiền tệ giữa hai loại ví trong ứng dụng tài chính**  
 ```python
 wallet_a = 100  # Ví A có 100 đô
@@ -82,14 +89,13 @@ Hoán đổi hai biến không chỉ là một bài tập đơn giản mà còn 
 ### 2. **Chuyển đổi độ C sang độ F**
 
 
-### **Chuyển đổi độ C sang độ F để làm gì?**  
+**Chuyển đổi độ C sang độ F để làm gì?** 
 
 Việc chuyển đổi từ **độ C (Celsius, °C)** sang **độ F (Fahrenheit, °F)** rất quan trọng trong nhiều lĩnh vực như **khoa học, y tế, hàng không, dự báo thời tiết và du lịch**.  
 
 Công thức chuyển đổi:  
-\[
-°F = (°C \times \frac{9}{5}) + 32
-\]
+
+\\[ °F = (°C \times \frac{9}{5}) + 32 \\]
 
 ---
 
