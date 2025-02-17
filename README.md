@@ -1,2 +1,2 @@
 # python
-Lộ trình tự học Python 
+Lộ trình tự học Python cùng với chat GPT
