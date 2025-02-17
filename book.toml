@@ -1,0 +1,13 @@
+[book]
+title = "Tự học Python"
+description = "Lộ trình tự học Python"
+authors = ["SkywireX"]
+language = "vi"
+multilingual = false
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/skywirex/python"
+git-repository-icon = "fa-github"
+default-theme = "light"
+additional-css = ["theme/css/custom.css"]

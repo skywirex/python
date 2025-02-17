@@ -1,0 +1,15 @@
+# MỤC LỤC
+
+- [Mục tiêu](./muc-tieu.md)
+- [Bước 1: Làm quen với Python](./b1-lam-quen.md)
+	- [Ngày 1](./b1/ngay-1.md)
+	- [Ngày 2](./b1/ngay-2.md)
+	- [Ngày 3](./b1/ngay-3.md)
+	- [Ngày 4](./b1/ngay-4.md)
+	- [Ngày 5](./b1/ngay-5.md)
+	- [Ngày 6](./b1/ngay-6.md)
+	- [Ngày 7](./b1/ngay-7.md)
+- [Bước 2: Bắt đầu phát triển phần mềm (Xây dựng dự án)](./b2-bat-dau.md)
+	- [Ngày 1](./b2/ngay-1.md)
+	- [Ngày 2](./b2/ngay-2.md)
+	- [Ngày 3](./b2/ngay-3.md)
