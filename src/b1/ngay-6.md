@@ -1,7 +1,7 @@
-# Ngày 6
+# Ngày 6: Lập trình hướng đối tượng (OOP) trong Python
 
-## 🚀 **Lập trình hướng đối tượng (OOP) trong Python**  
-Trong 5 giờ, bạn có thể học về các khái niệm chính của OOP trong Python:  
+Trong 5 giờ, bạn có thể học về các khái niệm chính của OOP trong Python:
+  
 1. **Đối tượng (Object)**  
 2. **Lớp (Class)**  
 3. **Phương thức & Constructor (`__init__`)**  
