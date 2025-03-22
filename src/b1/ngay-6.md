@@ -1,5 +1,209 @@
 # Ngày 6: Lập trình hướng đối tượng (OOP) trong Python
 
+Tôi sẽ thiết kế một khóa học 5 giờ về Lập trình hướng đối tượng (OOP) trong Python, chia thành các phần rõ ràng, mỗi phần khoảng 1 giờ. Nội dung bao gồm lý thuyết cơ bản, ví dụ thực tế, và bài tập để bạn thực hành. Mục tiêu là bạn sẽ nắm được các khái niệm cốt lõi của OOP (**class, object, inheritance, encapsulation, polymorphism**) và áp dụng chúng trong Python.
+
+## Giờ 1: Giới thiệu và Class/Object cơ bản
+
+### Mục tiêu: 
+Hiểu class, object là gì và cách tạo chúng trong Python.
+
+### Lý thuyết (20 phút):
+- OOP là gì? Lập trình dựa trên "đối tượng" (object) mô phỏng thế giới thực.
+- **Class**: Bản thiết kế (blueprint) của đối tượng.
+- **Object**: Thực thể cụ thể được tạo từ class.
+- Cú pháp: `class TenClass:`.
+
+### Ví dụ thực hành (30 phút):
+
+```python
+# Định nghĩa class
+class Dog:
+    def __init__(self, name, age):  # Hàm khởi tạo
+        self.name = name  # Thuộc tính (attribute)
+        self.age = age
+
+    def bark(self):  # Phương thức (method)
+        print(f"{self.name} says: Woof!")
+
+# Tạo object
+dog1 = Dog("Buddy", 3)
+dog2 = Dog("Max", 5)
+
+# Truy cập thuộc tính và phương thức
+print(dog1.name, dog1.age)  # Buddy 3
+dog1.bark()  # Buddy says: Woof!
+dog2.bark()  # Max says: Woof!
+```
+
+### Bài tập (10 phút):
+Tạo class `Car` với thuộc tính `brand`, `speed` và phương thức `honk()` in ra "Beep beep!".
+
+---
+
+## Giờ 2: Encapsulation (Đóng gói)
+
+### Mục tiêu:
+Học cách bảo vệ dữ liệu và ẩn chi tiết triển khai.
+
+### Lý thuyết (20 phút):
+- **Encapsulation**: Giới hạn truy cập trực tiếp vào dữ liệu, dùng thuộc tính private/public.
+- Trong Python: Dùng `_` (protected) hoặc `__` (private) trước tên thuộc tính.
+
+### Ví dụ thực hành (30 phút):
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name  # Public
+        self.__age = age  # Private
+
+    def get_age(self):  # Getter
+        return self.__age
+
+    def set_age(self, age):  # Setter
+        if age > 0:
+            self.__age = age
+        else:
+            print("Age must be positive!")
+
+# Tạo object
+person = Person("Alice", 25)
+print(person.name)  # Alice
+print(person.get_age())  # 25
+person.set_age(30)
+print(person.get_age())  # 30
+person.set_age(-5)  # Age must be positive!
+```
+
+### Bài tập (10 phút):
+Tạo class `BankAccount` với thuộc tính private `__balance`, thêm phương thức `deposit()` và `withdraw()` để thay đổi số dư (kiểm tra số dư không âm).
+
+---
+
+## Giờ 3: Inheritance (Kế thừa)
+
+### Mục tiêu:
+Hiểu cách tái sử dụng code qua kế thừa.
+
+### Lý thuyết (20 phút):
+- **Inheritance**: Class con (**subclass**) thừa hưởng thuộc tính/phương thức từ class cha (**superclass**).
+- Cú pháp: `class SubClass(SuperClass):`
+
+### Ví dụ thực hành (30 phút):
+
+```python
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def eat(self):
+        print(f"{self.name} is eating.")
+
+class Cat(Animal):  # Kế thừa từ Animal
+    def meow(self):
+        print(f"{self.name} says: Meow!")
+
+class Dog(Animal):
+    def bark(self):
+        print(f"{self.name} says: Woof!")
+
+# Sử dụng
+cat = Cat("Luna")
+dog = Dog("Rex")
+cat.eat()  # Luna is eating.
+cat.meow()  # Luna says: Meow!
+dog.eat()  # Rex is eating.
+dog.bark()  # Rex says: Woof!
+```
+
+### Bài tập (10 phút):
+Tạo class `Vehicle` với thuộc tính `speed`, sau đó tạo subclass `Bicycle` và `Motorcycle` với phương thức riêng (e.g., `ring_bell()`, `rev_engine()`).
+
+---
+
+## Giờ 4: Polymorphism (Đa hình)
+
+### Mục tiêu:
+Học cách các đối tượng khác nhau phản hồi cùng một phương thức theo cách riêng.
+
+### Lý thuyết (20 phút):
+- **Polymorphism**: Nhiều class có thể dùng chung tên phương thức, nhưng hành vi khác nhau.
+
+### Ví dụ thực hành (30 phút):
+
+```python
+class Animal:
+    def speak(self):
+        pass  # Phương thức trống, để subclass định nghĩa
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+# Đa hình
+animals = [Cat(), Dog()]
+for animal in animals:
+    print(animal.speak())  # Meow! rồi Woof!
+```
+
+### Bài tập (10 phút):
+Tạo class `Shape` với phương thức `area()`, sau đó tạo subclass `Circle` (diện tích: πr²) và `Rectangle` (diện tích: dài × rộng). Gọi `area()` cho từng hình.
+
+---
+
+## Giờ 5: Tổng hợp và Dự án nhỏ
+
+### Mục tiêu:
+Kết hợp tất cả khái niệm vào một ví dụ thực tế.
+
+### Dự án: Quản lý thư viện (40 phút)
+
+```python
+class Book:
+    def __init__(self, title, author):
+        self.__title = title
+        self.__author = author
+        self.__is_borrowed = False
+
+    def get_title(self):
+        return self.__title
+
+    def borrow(self):
+        if not self.__is_borrowed:
+            self.__is_borrowed = True
+            print(f"{self.__title} has been borrowed.")
+        else:
+            print(f"{self.__title} is already borrowed.")
+
+class Library:
+    def __init__(self):
+        self.books = []
+
+    def add_book(self, book):
+        self.books.append(book)
+        print(f"Added {book.get_title()} to library.")
+
+# Sử dụng
+book1 = Book("Python 101", "John Doe")
+library = Library()
+library.add_book(book1)
+book1.borrow()
+```
+
+---
+
+## Lịch học gợi ý (5 giờ)
+- **Giờ 1**: Class/Object cơ bản.
+- **Giờ 2**: Encapsulation.
+- **Giờ 3**: Inheritance.
+- **Giờ 4**: Polymorphism.
+- **Giờ 5**: Dự án tổng hợp.
+
+
 Trong 5 giờ, bạn có thể học về các khái niệm chính của OOP trong Python:
   
 1. **Đối tượng (Object)**  
