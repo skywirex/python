@@ -1,146 +1,101 @@
-# Ngày 1
+# Ngày 1: Nền Tảng Cơ Bản (5 giờ)
 
-Dành 3 giờ để nắm vững 4 khái niệm chính:  
+**Mục tiêu:** Làm quen với Python, cách nhập/xuất dữ liệu và kiểm soát luồng cơ bản.
 
-1. **Hàm `print()`** – Dùng để hiển thị dữ liệu ra màn hình.  
-2. **Biến (Variable)** – Dùng để lưu trữ giá trị.  
-3. **Nhập dữ liệu (`input()`)** – Lấy dữ liệu từ người dùng.  
-4. **Câu lệnh điều kiện (`if-else`)** – Kiểm tra điều kiện và thực hiện các hành động tương ứng.  
+## Giờ 1: `print()` và Biến (Variable) - 60 phút
+### Lý thuyết (20 phút)
+- `print()`: In dữ liệu (chuỗi, số, biến).
+- Biến: Lưu giá trị, không cần khai báo kiểu.
 
----
-
-### 1. `print()`: Xuất dữ liệu ra màn hình  
-
-Hàm `print()` giúp in thông tin ra màn hình.  
-
-**Ví dụ:**  
+### Thực hành (30 phút)
 ```python
-print("Xin chào, Python!")
-print("Tổng của 5 + 3 là:", 5 + 3)
+name = "Alex"
+age = 25
+print(f"Hi, I’m {name}, {age} years old.")
 ```
 
-📌 **Lưu ý**: Dùng dấu `,` để nối nhiều giá trị trong `print()`.  
+### Bài tập (10 phút)
+Tạo 3 biến (tên, tuổi, thành phố) và in thành câu hoàn chỉnh.
 
 ---
 
-### 2. Biến trong Python  
+## Giờ 2: `input()` - 60 phút
+### Lý thuyết (20 phút)
+- Lấy dữ liệu người dùng.
+- Chuyển kiểu (`int()`, `float()`).
 
-Biến dùng để lưu trữ dữ liệu. Python không cần khai báo kiểu dữ liệu, chỉ cần gán giá trị.  
-
-**Ví dụ:**  
+### Thực hành (30 phút)
 ```python
-ten = "Alice"
-tuoi = 25
-diem_tb = 8.5
-
-print("Tên:", ten)
-print("Tuổi:", tuoi)
-print("Điểm trung bình:", diem_tb)
+name = input("Your name: ")
+age = int(input("Your age: "))
+print(f"In 10 years, {name} will be {age + 10}.")
 ```
 
-📌 **Lưu ý**:  
-- Biến không được đặt tên bắt đầu bằng số.  
-- Không dùng dấu cách trong tên biến (dùng `_` thay thế).  
+### Bài tập (10 phút)
+Hỏi năm sinh, tính tuổi `(2025 - năm sinh)`.
 
 ---
 
-### 3. Nhập dữ liệu từ bàn phím (`input()`)  
+## Giờ 3: Câu lệnh điều kiện (`if-else`) - 60 phút
+### Lý thuyết (20 phút)
+- Kiểm tra điều kiện với `if`, `elif`, `else`.
 
-Hàm `input()` giúp nhập dữ liệu từ người dùng.  
-- Mặc định, `input()` trả về kiểu **chuỗi (`str`)**.  
-- Dùng `int()` hoặc `float()` để chuyển sang số nếu cần.  
-
-**Ví dụ:**  
+### Thực hành (30 phút)
 ```python
-ten = input("Nhập tên của bạn: ")
-tuoi = int(input("Nhập tuổi của bạn: "))  # Chuyển đổi thành số nguyên
-print("Xin chào,", ten, "bạn", tuoi, "tuổi!")
-```
-
-📌 **Lưu ý**: Dùng `int()` hoặc `float()` khi nhập số để có thể thực hiện tính toán.  
-
----
-
-### 4. Câu lệnh điều kiện `if-else`  
-
-Dùng `if-else` để kiểm tra điều kiện và quyết định chương trình sẽ chạy như thế nào.  
-
-**Ví dụ:**  
-```python
-diem = float(input("Nhập điểm của bạn: "))
-
-if diem >= 5:
-    print("Bạn đã đậu!")
+age = int(input("Enter age: "))
+if age >= 18:
+    print("Adult")
 else:
-    print("Bạn đã rớt!")
+    print("Minor")
 ```
 
-📌 **Lưu ý**:  
-- Dùng dấu **:`** sau `if` và `else`.  
-- Thụt lề (indent) quan trọng trong Python.  
+### Bài tập (10 phút)
+Hỏi số, kiểm tra chẵn/lẻ (dùng `%`).
 
 ---
 
-### 📌 Tóm tắt nhanh  
-- Dùng `print()` để in ra màn hình.  
-- Biến lưu trữ dữ liệu, không cần khai báo kiểu.  
-- `input()` nhận dữ liệu từ người dùng.  
-- `if-else` để kiểm tra điều kiện.  
+## Giờ 4: Chuỗi (Strings) - 60 phút
+### Lý thuyết (20 phút)
+- Cắt chuỗi, phương thức (`upper()`, `lower()`, `len()`).
 
-Dưới đây là một số bài tập thực hành cho từng phần để bạn luyện tập.  
+### Thực hành (30 phút)
+```python
+text = "python"
+print(text[0:3])  # pyt
+print(text.upper())  # PYTHON
+print(len(text))  # 6
+```
+
+### Bài tập (10 phút)
+Hỏi tên, in chữ cái đầu in hoa.
 
 ---
 
-### 📝 **Bài 1: Luyện tập `print()`**  
-Viết chương trình in ra màn hình các thông tin sau:  
+## Giờ 5: Toán tử (Operators) - 60 phút
+### Lý thuyết (20 phút)
+- Toán tử số học (`+`, `-`, `*`, `/`, `%`).
+- Toán tử so sánh (`==`, `<`).
+- Toán tử logic (`and`, `or`).
+
+### Thực hành (30 phút)
+```python
+a = 10
+b = 3
+print(a + b, a % b)  # 13 1
+print(a > b and b != 0)  # True
 ```
-Học Python cơ bản
-Tổng của 15 và 25 là: 40
-```
-👉 **Gợi ý**: Dùng `print()` và phép cộng `+`.  
+
+### Bài tập (10 phút)
+Hỏi 2 số, in tổng và kiểm tra số nào lớn hơn.
 
 ---
 
-### 📝 **Bài 2: Luyện tập về biến**  
-1. Tạo 3 biến: `ten`, `tuoi`, `so_thich`, gán giá trị cho chúng.  
-2. In ra màn hình câu:  
-   ```
-   Xin chào, tôi là [tên]. Tôi [tuổi] tuổi và tôi thích [sở thích].
-   ```  
-👉 **Gợi ý**: Sử dụng `print()` với dấu `,` hoặc chuỗi f-string (`f"..."`).  
+## **Kết quả Ngày 1**
+Bạn hiểu cách nhập/xuất dữ liệu, lưu trữ, thao tác chuỗi và ra quyết định cơ bản.
 
 ---
 
-### 📝 **Bài 3: Nhập dữ liệu từ bàn phím**  
-Viết chương trình yêu cầu người dùng nhập tên và năm sinh, sau đó tính tuổi và in ra màn hình.  
-```
-Nhập tên của bạn: An
-Nhập năm sinh của bạn: 2000
-Xin chào An! Năm nay bạn 24 tuổi.
-```
-👉 **Gợi ý**: Dùng `input()`, `int()` để tính tuổi.  
-
----
-
-### 📝 **Bài 4: Câu lệnh `if-else`**  
-Viết chương trình nhập điểm trung bình của một học sinh và kiểm tra kết quả:  
-- Nếu điểm >= 8 → "Giỏi"  
-- Nếu điểm >= 5 → "Khá"  
-- Nếu điểm < 5 → "Yếu"  
-
-👉 **Gợi ý**: Dùng `if-elif-else`.  
-
----
-
-### 🔥 **Bài 5: Tổng hợp**  
-Viết chương trình yêu cầu người dùng nhập hai số và hiển thị menu:  
-```
-Nhập số thứ nhất: 10  
-Nhập số thứ hai: 5  
-Chọn phép tính: (+, -, *, /)  
-Nhập phép tính: *  
-Kết quả: 50  
-```
-👉 **Gợi ý**:  
-- Dùng `input()` để nhập hai số và phép tính.  
-- Dùng `if-elif-else` để xử lý từng phép toán.  
+# **Lưu Ý**
+- **Thực hành:** Chạy code từng phần, thử thay đổi giá trị.
+- **Ôn tập:** Cuối mỗi ngày, viết lại 1-2 ví dụ không nhìn code.
+- **Công cụ:** Dùng IDLE, VS Code hoặc Google Colab để chạy.
