@@ -1,179 +1,127 @@
 # Ngày 5: Cấu trúc dữ liệu trong Python (4 giờ học)  
 
-## 🔥 **1. Stack (Ngăn xếp)**
-**Đặc điểm:**  
-- Cấu trúc **LIFO** (*Last In, First Out* – Vào sau, ra trước).  
-- Có hai thao tác chính:  
-  - `push()`: Thêm phần tử vào ngăn xếp.  
-  - `pop()`: Lấy phần tử ra khỏi ngăn xếp.  
+## Lịch học gợi ý (4 giờ)
+- **Giờ 1**: Stack (30 phút) + Queue (30 phút).
+- **Giờ 2**: Dictionary (45 phút) + Tuple (15 phút).
+- **Giờ 3**: Cây (60 phút).
+- **Giờ 4**: Danh sách liên kết (45 phút) + Ôn tập (15 phút).
 
-**Cách triển khai bằng list:**  
+## 1. Stack (Ngăn xếp) - 30 phút
+
+**Khái niệm**: Stack là cấu trúc dữ liệu "vào sau, ra trước" (**LIFO - Last In, First Out**). Giống như xếp đĩa, bạn chỉ lấy được đĩa trên cùng.
+
+**Triển khai trong Python**: Dùng list với `append()` (đẩy vào) và `pop()` (lấy ra).
+
 ```python
+# Tạo stack
 stack = []
 
-# Thêm phần tử vào stack
+# Đẩy phần tử vào
 stack.append(1)
 stack.append(2)
 stack.append(3)
+print("Stack sau khi thêm:", stack)  # [1, 2, 3]
 
-# Lấy phần tử ra (LIFO)
-print(stack.pop())  # 3
-print(stack.pop())  # 2
+# Lấy phần tử ra
+top = stack.pop()
+print("Phần tử lấy ra:", top)  # 3
+print("Stack sau khi pop:", stack)  # [1, 2]
 ```
 
-📌 **Ghi nhớ:** Python list có sẵn `append()` và `pop()` để hoạt động như Stack.  
+**Ứng dụng**: Kiểm tra ngoặc hợp lệ (e.g., `()`, `{}`), quay lại thao tác (undo).
+
+**Bài tập**: Viết hàm kiểm tra chuỗi ngoặc như `"()"` hoặc `"({[]})"` có hợp lệ không.
 
 ---
 
-## 🔥 **2. Queue (Hàng đợi)**
-**Đặc điểm:**  
-- Cấu trúc **FIFO** (*First In, First Out* – Vào trước, ra trước).  
-- Thao tác chính:  
-  - `enqueue()`: Thêm phần tử vào cuối hàng đợi.  
-  - `dequeue()`: Lấy phần tử ra khỏi đầu hàng đợi.  
+## 2. Queue (Hàng đợi) - 30 phút
 
-**Cách triển khai bằng `collections.deque`:**  
+**Khái niệm**: Queue là "vào trước, ra trước" (**FIFO - First In, First Out**). Như xếp hàng mua vé.
+
+**Triển khai trong Python**: Dùng `collections.deque` cho hiệu quả (thay vì list).
+
 ```python
 from collections import deque
 
+# Tạo queue
 queue = deque()
 
-# Thêm phần tử vào queue
+# Thêm phần tử
 queue.append(1)
 queue.append(2)
 queue.append(3)
+print("Queue sau khi thêm:", list(queue))  # [1, 2, 3]
 
-# Lấy phần tử ra (FIFO)
-print(queue.popleft())  # 1
-print(queue.popleft())  # 2
+# Lấy phần tử
+front = queue.popleft()
+print("Phần tử lấy ra:", front)  # 1
+print("Queue sau khi pop:", list(queue))  # [2, 3]
 ```
 
-📌 **Ghi nhớ:** Dùng `deque` thay vì list để tối ưu hiệu suất.  
+**Ứng dụng**: Xử lý tác vụ theo thứ tự, hàng đợi in ấn.
+
+**Bài tập**: Mô phỏng hàng đợi người mua vé, thêm 5 người, phục vụ 3 người.
 
 ---
 
-## 🔥 **3. Dictionary (Từ điển)**
-**Đặc điểm:**  
-- Lưu dữ liệu theo cặp `key: value`.  
-- Truy xuất dữ liệu nhanh hơn list.  
+## 3. Dictionary (Từ điển) - 45 phút
 
-**Ví dụ sử dụng:**  
+**Khái niệm**: Lưu dữ liệu dạng **key-value** (khóa-giá trị), truy cập nhanh qua key.
+
+**Triển khai trong Python**:
+
 ```python
-sinh_vien = {
-    "ten": "Nguyen Van A",
-    "tuoi": 20,
-    "diem": 8.5
-}
+# Tạo dictionary
+my_dict = {"name": "Alex", "age": 25, "city": "Hanoi"}
 
-# Truy xuất dữ liệu
-print(sinh_vien["ten"])  # Nguyen Van A
-print(sinh_vien.get("diem"))  # 8.5
+# Truy cập
+print(my_dict["name"])  # Alex
 
-# Thêm mới hoặc cập nhật
-sinh_vien["lop"] = "12A1"
-sinh_vien["diem"] = 9.0
+# Thêm/sửa
+my_dict["job"] = "Developer"
+my_dict["age"] = 26
+print("Sau khi cập nhật:", my_dict)  # {'name': 'Alex', 'age': 26, 'city': 'Hanoi', 'job': 'Developer'}
+
+# Xóa
+del my_dict["city"]
+print("Sau khi xóa:", my_dict)  # {'name': 'Alex', 'age': 26, 'job': 'Developer'}
 ```
 
-📌 **Ghi nhớ:** Dùng `.get()` để tránh lỗi nếu key không tồn tại.  
+**Ứng dụng**: Đếm tần suất từ, lưu thông tin cấu trúc (như hồ sơ).
+
+**Bài tập**: Đếm số lần xuất hiện của mỗi chữ cái trong chuỗi `"hello world"`.
 
 ---
 
-## 🔥 **4. Tuple (Bộ giá trị)**
-**Đặc điểm:**  
-- Giống list nhưng **bất biến** (không thay đổi được sau khi tạo).  
-- Truy xuất nhanh hơn list.  
+## 4. Tuple (Bộ dữ liệu) - 30 phút
 
-**Ví dụ sử dụng:**  
+**Khái niệm**: Giống list nhưng **không thay đổi được** (immutable), dùng để lưu dữ liệu cố định.
+
+**Triển khai trong Python**:
+
 ```python
-toado = (10, 20)
+# Tạo tuple
+my_tuple = (1, 2, 3, "hello")
 
-# Truy xuất giá trị
-print(toado[0])  # 10
-print(toado[1])  # 20
+# Truy cập
+print(my_tuple[0])  # 1
+print(my_tuple[-1])  # hello
 
-# Không thể thay đổi giá trị (sẽ báo lỗi)
-# toado[0] = 100  # ❌ Lỗi!
+# Đếm và tìm
+print(my_tuple.count(2))  # 1 (số lần xuất hiện của 2)
+print(my_tuple.index("hello"))  # 3 (vị trí của "hello")
 ```
 
-📌 **Ghi nhớ:** Dùng tuple khi dữ liệu không cần thay đổi.  
+**Ứng dụng**: Lưu tọa độ `(x, y)`, trả về nhiều giá trị từ hàm.
+
+**Bài tập**: Viết hàm trả về tuple chứa `(tổng, hiệu)` của 2 số.
 
 ---
 
-## 🔥 **5. Cây (Tree)**
-**Đặc điểm:**  
-- Cấu trúc dữ liệu có **nút gốc** và các **nút con**.  
-- Mỗi nút có thể có nhiều con, nhưng chỉ có một cha.  
-
-**Triển khai cây nhị phân bằng lớp `Node`:**  
-```python
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-
-# Tạo cây
-root = Node(10)
-root.left = Node(5)
-root.right = Node(15)
-
-# Duyệt cây theo thứ tự NLR (Preorder)
-def preorder(node):
-    if node:
-        print(node.value, end=" ")
-        preorder(node.left)
-        preorder(node.right)
-
-preorder(root)  # Output: 10 5 15
-```
-
-📌 **Ghi nhớ:** Cây nhị phân có thể duyệt theo **Preorder (NLR), Inorder (LNR), Postorder (LRN)**.  
-
----
-
-## 🔥 **6. Danh sách liên kết (Linked List)**
-**Đặc điểm:**  
-- Gồm các **nút (node)** liên kết với nhau.  
-- Mỗi nút chứa **dữ liệu** và **trỏ đến nút tiếp theo**.  
-
-**Triển khai danh sách liên kết đơn:**  
-```python
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def append(self, data):
-        new_node = Node(data)
-        if not self.head:
-            self.head = new_node
-            return
-        last = self.head
-        while last.next:
-            last = last.next
-        last.next = new_node
-
-    def print_list(self):
-        temp = self.head
-        while temp:
-            print(temp.data, end=" -> ")
-            temp = temp.next
-        print("None")
-
-# Sử dụng danh sách liên kết
-ll = LinkedList()
-ll.append(1)
-ll.append(2)
-ll.append(3)
-
-ll.print_list()  # Output: 1 -> 2 -> 3 -> None
-```
-
-📌 **Ghi nhớ:** So với list, danh sách liên kết **tốn bộ nhớ hơn nhưng thêm/xóa nhanh hơn**.  
+## Lưu ý
+- **Thực hành**: Sau mỗi phần, chạy code và thử sửa đổi (thêm/xóa phần tử, in ngược, v.v.).
+- **Debug**: Dùng `print()` để kiểm tra giá trị giữa chừng.
+- **Mở rộng**: Tìm hiểu thêm về `set` (tập hợp) hoặc cách tối ưu cây nhị phân.
 
 ---
 
