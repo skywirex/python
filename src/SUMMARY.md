@@ -1,7 +1,7 @@
 # MỤC LỤC
 
 - [Mục tiêu](./muc-tieu.md)
-- [Bước 1: Làm quen với Python](./b1-lam-quen.md)
+- [Làm quen với Python](./b1-lam-quen.md)
 	- [Ngày 1: Nền Tảng Cơ Bản](./b1/ngay-1.md)
 	- [Ngày 2: Tăng Cường và Tổ Chức Code](./b1/ngay-2.md)
 	- [Ngày 3: Lập trình đơn giản](./b1/ngay-3.md)
@@ -10,7 +10,7 @@
 	- [Ngày 6: Lập trình hướng đối tượng - OOP](./b1/ngay-6.md)
 	- [Ngày 7: Thuật toán](./b1/ngay-7.md)
 
-- [Bước 2: Bắt đầu phát triển phần mềm](./b2-bat-dau.md)
+- [Bắt đầu phát triển phần mềm](./b2-bat-dau.md)
 	- [Ngày 1](./b2/ngay-1.md)
 	- [Ngày 2](./b2/ngay-2.md)
 	- [Ngày 3](./b2/ngay-3.md)
@@ -18,3 +18,6 @@
 - [Bước 3: ](./b3-phat-trien-phan-mem.md)
 
 - [RetroDash](./RetroDash.md)
+
+- [Reading](./reading.md)
+    - [Bất đồng bộ (asynchronous) trong Python](./reading/asynchronous-python.md)

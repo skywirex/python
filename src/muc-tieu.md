@@ -14,7 +14,7 @@ Sau khi hoàn thành, bạn sẽ trở thành một **Junior Python Developer**.
 ## **Kế hoạch tổng thể:**  
 Bây giờ, mình sẽ chia kế hoạch theo từng tuần cho bạn.  
 
-### **Bước 1: Làm quen với Python**  
+### **1. Làm quen với Python**  
 Hãy tò mò và khám phá cách làm việc với Python. Hãy kiểm tra càng nhiều thứ càng tốt.  
 
 - **Ngày 1**: 4 khái niệm cơ bản (3 giờ) → `print`, biến, nhập dữ liệu, câu lệnh điều kiện (`if-else`).  
@@ -25,17 +25,9 @@ Hãy tò mò và khám phá cách làm việc với Python. Hãy kiểm tra càn
 - **Ngày 6**: Lập trình hướng đối tượng - OOP (5 giờ) → Đối tượng, Lớp, Phương thức & Constructor, Kế thừa trong OOP.  
 - **Ngày 7**: Thuật toán (5 giờ) → Tìm kiếm (Tìm kiếm tuyến tính và nhị phân), Sắp xếp (Bubble sort, Selection sort), Đệ quy (tính giai thừa, dãy Fibonacci), Độ phức tạp thời gian (Tuyến tính, Bậc hai, Hằng số).  
 
-### **Không cài đặt Python ngay lập tức!**  
-Nghe có vẻ mâu thuẫn, nhưng tin mình đi! Mình biết nhiều người đã mất động lực chỉ vì thất bại trong việc cài đặt Python hoặc IDE.  
-
-- **Thay vào đó**, hãy sử dụng một ứng dụng Android như **Programming Hero**, nơi bạn có thể học tất cả các khái niệm trên mà không cần cài đặt Python.  
-- Hoặc, bạn có thể sử dụng **trình chạy mã online** như Repl.it hoặc DataCamp.  
-
-👉 **Đừng để việc cài đặt Python là bước đầu tiên nếu bạn không rành công nghệ!**  
-
 ---
 
-### **Bước 2: Bắt đầu phát triển phần mềm (Xây dựng dự án)**  
+### **2. Bắt đầu phát triển phần mềm (Xây dựng dự án)**  
 Hãy tập hợp mọi thứ lại để tạo ra một **dự án thực tế**.  
 
 - **Ngày 1**: Làm quen với **IDE** (4 giờ) → Chọn một IDE tốt, mình khuyên dùng **VS Code** và cài đặt Python Extension.  
@@ -50,7 +42,7 @@ Hãy tập hợp mọi thứ lại để tạo ra một **dự án thực tế**
 
 ---
 
-### **Bước 3: Làm quen với quy trình phát triển phần mềm**  
+### **3. Làm quen với quy trình phát triển phần mềm**  
 Tuần thứ 3 sẽ giúp bạn hiểu về **quy trình phát triển phần mềm**. Bạn không cần thành thạo tất cả, nhưng hãy biết những điều cơ bản.  
 
 - **Ngày 1**: Cơ bản về **Cơ sở dữ liệu** (4 giờ) → Câu lệnh SQL (`CREATE TABLE`, `SELECT`, `WHERE`, `UPDATE`), các hàm SQL (`AVG`, `MAX`, `COUNT`), chuẩn hóa dữ liệu, JOIN (INNER JOIN, OUTER JOIN).  
@@ -62,7 +54,7 @@ Tuần thứ 3 sẽ giúp bạn hiểu về **quy trình phát triển phần m�
 
 ---
 
-### **Bước 4: Chuẩn bị nghiêm túc để xin việc**  
+### **4. Chuẩn bị nghiêm túc để xin việc**  
 Mục tiêu tuần 4 là **tìm việc làm** hoặc ít nhất là chuẩn bị tốt cho tương lai.  
 
 - **Ngày 1**: Viết **CV** (5 giờ) → Tạo một **CV một trang**, đưa phần **tóm tắt kỹ năng** lên đầu, liệt kê **các dự án** có link GitHub.  

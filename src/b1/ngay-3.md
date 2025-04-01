@@ -1,7 +1,5 @@
 # Ngày 3: Lập trình đơn giản
 
-Dưới đây là các bài tập lập trình đơn giản bằng Python:
-
 ### 1. **Hoán đổi hai biến**
 ```python
 a = 5
@@ -372,3 +370,109 @@ def remove_duplicates(lst):
 numbers = [1, 2, 2, 3, 4, 4, 5]
 print("Danh sách sau khi loại bỏ trùng lặp:", remove_duplicates(numbers))
 ```
+
+
+Dưới đây là các bài tập lập trình đơn giản đã được bổ sung công dụng ứng dụng thực tế cho từng bài để bạn thấy được giá trị của chúng trong đời sống hoặc lập trình. Mỗi bài vẫn giữ nguyên tính đơn giản, phù hợp để học Python trong khoảng 4 giờ tổng cộng.
+
+## 1. Hoán đổi hai biến
+**Mô tả:** Nhập hai số từ người dùng và hoán đổi giá trị của chúng mà không dùng biến tạm.  
+**Thời gian:** ~30 phút  
+**Mã mẫu:**  
+```python
+a = float(input("Nhập số thứ nhất: "))
+b = float(input("Nhập số thứ hai: "))
+print(f"Trước khi hoán đổi: a = {a}, b = {b}")
+a, b = b, a
+print(f"Sau khi hoán đổi: a = {a}, b = {b}")
+```
+**Công dụng thực tế:**  
+- Trong thuật toán sắp xếp (như Bubble Sort), hoán đổi giá trị là thao tác cơ bản để sắp xếp danh sách (ví dụ: sắp xếp điểm số học sinh từ thấp đến cao).  
+- Ứng dụng trong xử lý dữ liệu khi cần đổi chỗ hai giá trị trong bộ nhớ mà không tốn thêm không gian.
+
+## 2. Chuyển đổi độ C sang độ F
+**Mô tả:** Nhập nhiệt độ (°C) và chuyển đổi sang độ F bằng công thức: °F = °C * 9/5 + 32.  
+**Thời gian:** ~30 phút  
+**Mã mẫu:**  
+```python
+celsius = float(input("Nhập nhiệt độ (°C): "))
+fahrenheit = celsius * 9/5 + 32
+print(f"{celsius}°C tương đương {fahrenheit}°F")
+```
+**Công dụng thực tế:**  
+- Dùng trong ứng dụng thời tiết để chuyển đổi nhiệt độ giữa các đơn vị cho người dùng ở các quốc gia khác nhau (Mỹ dùng °F, Việt Nam dùng °C).  
+- Hỗ trợ kỹ sư hoặc nhà khoa học chuyển đổi nhanh dữ liệu nhiệt độ khi làm việc với thiết bị quốc tế.
+
+## 3. Tính tổng các chữ số của một số
+**Mô tả:** Nhập một số nguyên và tính tổng các chữ số của nó (ví dụ: 123 → 1 + 2 + 3 = 6).  
+**Thời gian:** ~45 phút  
+**Mã mẫu:**  
+```python
+number = int(input("Nhập một số nguyên: "))
+total = 0
+while number > 0:
+    total += number % 10
+    number //= 10
+print(f"Tổng các chữ số: {total}")
+```
+**Công dụng thực tế:**  
+- Kiểm tra tính hợp lệ của mã số (như số ISBN của sách hoặc mã vạch) bằng cách tính tổng chữ số và so sánh với quy tắc.  
+- Ứng dụng trong trò chơi hoặc bài toán giải đố liên quan đến số học.
+
+## 4. Kiểm tra số nguyên tố
+**Mô tả:** Nhập một số nguyên và kiểm tra xem nó có phải số nguyên tố không.  
+**Thời gian:** ~1 giờ  
+**Mã mẫu:**  
+```python
+num = int(input("Nhập một số nguyên: "))
+if num < 2:
+    print(f"{num} không phải số nguyên tố.")
+else:
+    is_prime = True
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(f"{num} là số nguyên tố.")
+    else:
+        print(f"{num} không phải số nguyên tố.")
+```
+**Công dụng thực tế:**  
+- Dùng trong mật mã học (như thuật toán RSA) để tạo khóa mã hóa dựa trên số nguyên tố lớn.  
+- Ứng dụng trong kiểm tra tính tối ưu của các bài toán phân bổ tài nguyên (ví dụ: chia công việc không bị trùng lặp).
+
+## 5. Tạo số ngẫu nhiên
+**Mô tả:** Tạo một số ngẫu nhiên trong khoảng do người dùng nhập (min và max).  
+**Thời gian:** ~30 phút  
+**Mã mẫu:**  
+```python
+import random
+min_val = int(input("Nhập giá trị nhỏ nhất: "))
+max_val = int(input("Nhập giá trị lớn nhất: "))
+random_num = random.randint(min_val, max_val)
+print(f"Số ngẫu nhiên: {random_num}")
+```
+**Công dụng thực tế:**  
+- Dùng trong trò chơi (như xúc xắc, rút thăm may mắn) để tạo kết quả ngẫu nhiên.  
+- Ứng dụng trong mô phỏng (simulation) để thử nghiệm các kịch bản (ví dụ: mô phỏng giao thông hoặc dự đoán thời tiết).
+
+## 6. Loại bỏ phần tử trùng lặp trong danh sách
+**Mô tả:** Nhập danh sách số (cách nhau bằng dấu cách) và loại bỏ các phần tử trùng lặp.  
+**Thời gian:** ~45 phút  
+**Mã mẫu:**  
+```python
+input_list = input("Nhập danh sách số (cách nhau bằng dấu cách): ").split()
+numbers = [int(x) for x in input_list]
+unique_numbers = list(set(numbers))
+print(f"Danh sách sau khi loại bỏ trùng lặp: {unique_numbers}")
+```
+**Công dụng thực tế:**  
+- Xử lý dữ liệu trong cơ sở dữ liệu để loại bỏ các bản ghi trùng (ví dụ: danh sách khách hàng không lặp lại).  
+- Dùng trong phân tích dữ liệu để làm sạch tập dữ liệu trước khi phân tích (data cleaning).
+
+## Lời khuyên
+- **Thực hành:** Dành khoảng 30-60 phút cho mỗi bài, tổng cộng 4 giờ. Chạy thử với nhiều giá trị đầu vào khác nhau để kiểm tra tính đúng đắn.  
+- **Ứng dụng thêm:** Nghĩ xem bạn có thể kết hợp các bài này vào một dự án lớn hơn không (ví dụ: một công cụ tính toán đa năng).  
+- **Kiểm tra lỗi:** Thử nhập dữ liệu không hợp lệ để xem chương trình phản ứng thế nào và cải thiện nếu cần.
+
+
