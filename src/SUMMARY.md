@@ -20,5 +20,6 @@
 - [RetroDash](./RetroDash.md)
 
 - [Reading](./reading.md)
+    - [Json trong Python](./reading/json-python.md)
     - [Cơ bản về nhật kí (log) trong Python](./reading/log-trong-python.md)
     - [Bất đồng bộ (asynchronous) trong Python](./reading/asynchronous-python.md)
