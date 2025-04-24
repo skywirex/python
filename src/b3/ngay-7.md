@@ -1,6 +1,16 @@
 # Debugging trong Python bằng PyCharm IDE
 
 
+## Mục tiêu
+
+Sau bài viết này bạn sẽ biết được cách:
+
+    - Thiết lập và sử dụng breakpoint trong PyCharm.
+    - Chạy chương trình ở chế độ Debug và kiểm tra giá trị biến.
+    - Sử dụng các công cụ như Step Over, Watch, và Evaluate Expression.
+    - Sửa lỗi chỉ số vượt quá giới hạn trong vòng lặp.
+
+
 Dưới đây là một ví dụ minh họa các cách gỡ lỗi (debugging) thông thường trong Python bằng PyCharm IDE. Ví dụ này sẽ sử dụng một đoạn code đơn giản có lỗi, và tôi sẽ hướng dẫn từng bước cách sử dụng các công cụ gỡ lỗi trong PyCharm để tìm và sửa lỗi.
 
 ## Ví dụ: Tính tổng các số trong danh sách
@@ -102,11 +112,3 @@ def calculate_sum(numbers):
 
 - **Tìm kiếm lỗi phổ biến**:
   Sử dụng tính năng Code Inspection của PyCharm (màu vàng/xanh dưới code) để phát hiện lỗi tiềm ẩn trước khi chạy.
-
-## Kết quả học tập
-
-Bạn đã học cách:
-- Thiết lập và sử dụng breakpoint trong PyCharm.
-- Chạy chương trình ở chế độ Debug và kiểm tra giá trị biến.
-- Sử dụng các công cụ như Step Over, Watch, và Evaluate Expression.
-- Sửa lỗi chỉ số vượt quá giới hạn trong vòng lặp.
