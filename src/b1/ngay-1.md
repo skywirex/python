@@ -11,7 +11,7 @@
 
 #### Python print() Function
 
-Link đọc https://www.w3schools.com/python/ref_func_print.asp
+Link đọc: https://www.w3schools.com/python/ref_func_print.asp
 
 #### Varibles (Biến)
 
