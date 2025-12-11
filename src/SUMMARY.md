@@ -2,8 +2,8 @@
 
 - [Mục tiêu](./muc-tieu.md)
 - [Làm quen với Python](./b1-lam-quen.md)
-	- [Ngày 1: print, variable, input, conditionals (if-else)](./b1/ngay-1.md)
-	- [Ngày 2: Tăng Cường và Tổ Chức Code](./b1/ngay-2.md)
+	- [Ngày 1: `print`, biến, nhập dữ liệu, câu lệnh điều kiện (`if-else`)](./b1/ngay-1.md)
+	- [Ngày 2: List, vòng lặp `for`, vòng lặp `while`, hàm, import module](./b1/ngay-2.md)
 	- [Ngày 3: Lập trình đơn giản](./b1/ngay-3.md)
 	- [Ngày 4: Lập trình trung bình](./b1/ngay-4.md)
 	- [Ngày 5: Cấu trúc dữ liệu](./b1/ngay-5.md)
