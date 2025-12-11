@@ -10,7 +10,7 @@
 	- [Ngày 6: Lập trình hướng đối tượng - OOP](./b1/ngay-6.md)
 	- [Ngày 7: Thuật toán](./b1/ngay-7.md)
 
-- [Bắt đầu viết phần mềm](./b2-bat-dau.md)
+- [Bắt đầu viết ứng dụng](./b2-bat-dau.md)
 	- [Ngày 1](./b2/ngay-1.md)
 	- [Ngày 2](./b2/ngay-2.md)
 	- [Ngày 3](./b2/ngay-3.md)

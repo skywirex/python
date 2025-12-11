@@ -27,10 +27,10 @@ Hãy tò mò và khám phá cách làm việc với Python. Hãy kiểm tra càn
 
 ---
 
-### **2. Bắt đầu phát triển phần mềm (Xây dựng dự án)**  
+### **2. Bắt đầu viết ứng dụng**  
 Hãy tập hợp mọi thứ lại để tạo ra một **dự án thực tế**.  
 
-- **Ngày 1**: Làm quen với **IDE** (4 giờ) → Chọn một IDE tốt, mình khuyên dùng **VS Code** và cài đặt Python Extension.  
+- **Ngày 1**: Làm quen với **IDE** (4 giờ) → Chọn một IDE tốt, khuyên dùng **VS Code** và cài đặt Python Extension.  
 - **Ngày 2**: Tìm hiểu về **GitHub** (5 giờ) → Tạo repository, thử commit, diff, push code. Học về branch, merge, pull request.  
 - **Ngày 3**: Dự án đầu tiên - **Máy tính đơn giản** (4 giờ) → Làm quen với **Tkinter**, tạo một ứng dụng máy tính đơn giản.  
 - **Ngày 4-6**: Dự án cá nhân (5 giờ mỗi ngày) → Chọn một dự án và bắt đầu làm. Nếu chưa có ý tưởng, hãy tham khảo danh sách dự án Python thú vị.  
