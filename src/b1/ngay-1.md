@@ -1,15 +1,21 @@
-# Ngày 1: Nền Tảng Cơ Bản (5 giờ)
+# Ngày 1: print, variable, input, conditionals (if-else)  
 
 **Mục tiêu:** Làm quen với Python, cách nhập/xuất dữ liệu và kiểm soát luồng cơ bản.
 
 ## Giờ 1: `print()` và Biến (Variable) - 60 phút
 ### Lý thuyết (20 phút)
+#### Cần nhớ 
+
  * `print()`: In dữ liệu (chuỗi, số, biến).
  * Biến: Lưu giá trị của dữ liệu, không cần khai báo kiểu.
 
-### Varibles (Biến)
+#### Python print() Function
 
-Biến trong Python là một tên đại diện để **lưu những giá trị của dữ liệu**. Dữ liệu lưu trữ có nhiều loại, Python có năm loại dữ liệu tiêu chuẩn, đó là: Numbers, String, List, Tuple và Dictionary.  
+Link đọc https://www.w3schools.com/python/ref_func_print.asp
+
+#### Varibles (Biến)
+
+Biến trong Python là một tên đại diện để **lưu những giá trị của dữ liệu**. Dữ liệu lưu trữ có nhiều loại, Python có năm loại dữ liệu tiêu chuẩn, đó là: **Numbers, String, List, Tuple và Dictionary.**
 
 Python là ngôn ngữ dynamically typed, tức là không cần khai báo kiểu dữ liệu cho biến trước khi sử dụng. Python sẽ tự động xác định kiểu dữ liệu dựa trên giá trị được gán.  
 
@@ -107,12 +113,16 @@ print(tu_dien)
 print(type(tu_dien))  # <class 'dict'>
 ```
 
+
 ### Thực hành (30 phút)
+
 ```python
 name = "Alex"
 age = 25
 print(f"Hi, I’m {name}, {age} years old.")
 ```
+
+Chữ **`f`** ở trước dấu ngoặc kép nghĩa là **f-string** — viết tắt của **formatted string literal** (chuỗi có định dạng). Nó cho phép bạn **chèn biến Python trực tiếp vào trong chuỗi** bằng cách đặt biến trong dấu `{ }`.
 
 ### Bài tập (10 phút)
 Tạo 3 biến (tên, tuổi, thành phố) và in thành câu hoàn chỉnh.
